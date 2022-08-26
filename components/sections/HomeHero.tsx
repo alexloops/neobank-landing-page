@@ -1,6 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { HiOutlineLightningBolt } from "react-icons/hi";
+import Link from "next/link";
 
 export default function HomeHero() {
   return (
@@ -34,9 +35,9 @@ export default function HomeHero() {
             </div>
             <p>
               Want to be an investor and have yieldings of up to 30%?{" "}
-              <a href="/#howitworks" className="font-soleil-bold underline">
-                Find out more
-              </a>
+              <Link href="/#howitworks">
+                <a className="font-soleil-bold underline">Find out more</a>
+              </Link>
             </p>
           </div>
           {/* Phone with app part */}
@@ -48,6 +49,7 @@ export default function HomeHero() {
             <img
               className="z-30 md:w-[450px] lg:w-[550px]"
               src="/hero-app.png"
+              alt="digital wallet app"
             />
           </div>
         </div>
@@ -57,14 +59,14 @@ export default function HomeHero() {
           <div className="max-w-7xl w-full h-28 flex items-center p-2 ">
             <div className="flex-1 flex items-center justify-center p-2">
               <div className="p-2 rounded-full border mr-2">
-                <img src="/icons/dividends.svg" />
+                <img src="/icons/dividends.svg" alt="icon" />
               </div>
               Competitive Interest Rates
             </div>
             <div className="w-[1px] opacity-50 bg-white h-2/5" />
             <div className="flex-1 flex items-center justify-center p-2">
               <div className="p-2 rounded-full border mr-2">
-                <img src="/icons/pay-date.svg" />
+                <img src="/icons/pay-date.svg" alt="icon" />
               </div>
               Pay over 24 months
             </div>

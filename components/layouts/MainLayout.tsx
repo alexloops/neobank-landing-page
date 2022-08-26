@@ -251,6 +251,7 @@ const Footer = () => {
               <a
                 href="https://github.com/remembertohydrate/neobank-landing-page"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaFacebookF className="mr-4 text-lg" />
               </a>
@@ -258,6 +259,7 @@ const Footer = () => {
               <a
                 href="https://github.com/remembertohydrate/neobank-landing-page"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaLinkedinIn className="mr-4 text-lg" />
               </a>
@@ -265,6 +267,7 @@ const Footer = () => {
               <a
                 href="https://github.com/remembertohydrate/neobank-landing-page"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaInstagram className="mr-4 text-lg" />
               </a>
@@ -272,6 +275,7 @@ const Footer = () => {
               <a
                 href="https://github.com/remembertohydrate/neobank-landing-page"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub className="text-lg" />
               </a>
