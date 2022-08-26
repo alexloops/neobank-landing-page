@@ -43,7 +43,7 @@ export default function MainLayout({
 
       <Navbar />
       {/* The padding top of this div has to be the same height of the navbar */}
-      <div className="flex-1 min-h-full w-full pt-[128px]">{children}</div>
+      <div className="flex-1 w-full pt-[128px]">{children}</div>
       <Footer />
     </div>
   );
@@ -71,13 +71,13 @@ const Navbar = () => {
     <header className="fixed z-50 bg-white w-full flex flex-col items-center">
       <div
         className={classNames(
-          "bg-neutral-100 w-full flex items-center justify-center transition-all duration-100",
+          "bg-neutral-100 text-sm sm:text-lg w-full px-4 flex items-center justify-center transition-all duration-100",
           isScrolled ? "h-0" : "h-10"
         )}
       >
         {" "}
-        <span className="text-xl mr-3 transition duration-200">👋</span> Loan
-        for businesses. Fast, safe and 100% online!
+        <span className="md:text-xl mr-3">👋</span> Loan for businesses. Fast,
+        safe and 100% online!
       </div>
       <nav className="bg-white w-full text-sm max-w-7xl">
         <Popover className="relative">
@@ -235,9 +235,10 @@ const Footer = () => {
   return (
     <footer className="bg-slate-50 w-full flex flex-col items-center">
       <div className="w-full h-0.5 bg-gradient-to-r from-[#F6BC4D] to-brand-light" />
-      <div className="w-full h-[550px] text-sm max-w-7xl pt-28 px-8 flex flex-col justify-between divide-y divide-slate-200">
-        <div className="h-5 px-4 flex">
-          <div className="flex flex-col max-w-xs mr-20">
+      <div className="w-full min-h-[550px] text-sm max-w-7xl pt-28 px-8 flex flex-col justify-between divide-y divide-slate-200">
+        <div className="px-4 flex flex-col lg:flex-row">
+          {/* Logo and Social Media Part */}
+          <div className="flex flex-col max-w-xs mr-16">
             <img className="w-32 mb-6" src="/logo2.png" alt="logo" />
             <p className="text-zinc-500 mb-10">
               Praesent vel velit mi. Nam semper faucibus orci, nec scelerisque
@@ -281,8 +282,9 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
-          <div className="flex flex-1">
+          {/* Column with Links Part */}
+          <div className="flex flex-1 my-24 lg:mt-0 flex-col sm:flex-row">
+            {/* First column */}
             <div className="flex-1">
               <div className="font-soleil-bold text-base text-zinc-500 mb-5">
                 COMPANY
@@ -300,7 +302,8 @@ const Footer = () => {
                 <a className="block mb-4 text-zinc-500">FAQ</a>
               </Link>
             </div>
-            <div className="flex-1">
+            {/* Second column */}
+            <div className="flex-1 mt-8 sm:mt-0">
               <div className="font-soleil-bold text-base text-zinc-500 mb-5">
                 LEGAL
               </div>
@@ -314,7 +317,8 @@ const Footer = () => {
                 <a className="block mb-4 text-zinc-500">Cookie Policy</a>
               </Link>
             </div>
-            <div className="flex-1">
+            {/* Third column */}
+            <div className="flex-1 mt-8 sm:mt-0">
               <div className="font-soleil-bold text-base text-zinc-500 mb-5">
                 CONTACT
               </div>
@@ -332,9 +336,9 @@ const Footer = () => {
                   href="#"
                   className="whitespace-nowrap p-0.25 overflow-hidden inline-flex bg-gradient-to-r from-[#F6BC4D] to-brand-light  border border-transparent rounded-md font-soleil-bold text-brand-light hover:opacity-90"
                 >
-                  <span className="flex items-center justify-center px-5 py-3 bg-slate-50 transition-all ease-in duration-75 rounded-sm group-hover:bg-opacity-0">
-                    <HiOutlineLightningBolt className="mr-2" /> Login to Digital
-                    Account
+                  <span className="flex items-center justify-center text-xs lg:text-sm px-3 py-2 lg:px-5 lg:py-3 bg-slate-50 transition-all ease-in duration-75 rounded-sm group-hover:bg-opacity-0">
+                    <HiOutlineLightningBolt className="mr-2 hidden md:block" />{" "}
+                    Login to Digital Account
                   </span>
                 </a>
               </Link>

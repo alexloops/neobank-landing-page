@@ -27,9 +27,9 @@ export default function HomeHero() {
               <input
                 placeholder={`How much do you need?`}
                 type="number"
-                className="w-[240px] text-center mr-2 h-14 rounded-md bg-white bg-opacity-60 placeholder:text-brand-dark placeholder:text-center placeholder:text-sm text-brand-dark focus:outline-none focus:placeholder:text-transparent"
+                className="sm:w-[240px] text-center mr-2 h-10 sm:h-14 rounded-md bg-white bg-opacity-60 placeholder:text-brand-dark placeholder:text-center placeholder:text-xs sm:placeholder:text-sm text-brand-dark focus:outline-none focus:placeholder:text-transparent"
               />
-              <button className="bg-brand-light text-sm font-soleil-bold rounded-md text-brand-dark px-4">
+              <button className="bg-brand-light text-sm font-soleil-regular sm:font-soleil-bold rounded-md text-brand-dark py-1 px-1 sm:px-4">
                 Simulate Loan
               </button>
             </div>
@@ -42,7 +42,7 @@ export default function HomeHero() {
           </div>
           {/* Phone with app part */}
           <div className="relative lg:w-1/2">
-            <p className="absolute top-16 left-20">
+            <p className="absolute top-16 left-20 hidden lg:block">
               <HiOutlineLightningBolt className="mr-2 mb-0.5 inline text-2xl " />
               Have your own digital wallet!
             </p>
@@ -55,8 +55,9 @@ export default function HomeHero() {
         </div>
         {/* Footer of the Hero */}
 
-        <div className=" z-10 w-full border-t border-white border-opacity-50 flex justify-center">
-          <div className="max-w-7xl w-full h-28 flex items-center p-2 ">
+        <div className="z-10 w-full border-t border-white border-opacity-50 flex justify-center">
+          <div className="max-w-7xl w-full min-h-28 flex flex-col sm:flex-row items-center p-2 ">
+            {/* First item */}
             <div className="flex-1 flex items-center justify-center p-2">
               <div className="p-2 rounded-full border mr-2">
                 <img src="/icons/dividends.svg" alt="icon" />
@@ -64,13 +65,16 @@ export default function HomeHero() {
               Competitive Interest Rates
             </div>
             <div className="w-[1px] opacity-50 bg-white h-2/5" />
-            <div className="flex-1 flex items-center justify-center p-2">
+            {/* Second item */}
+            <div className="flex-1 flex items-center justify-center p-2 mt-4 sm:mt-0">
               <div className="p-2 rounded-full border mr-2">
                 <img src="/icons/pay-date.svg" alt="icon" />
               </div>
               Pay over 24 months
             </div>
-            <div className="flex-1 flex flex-col items-center justify-center p-2">
+            <div className="w-[1px] opacity-50 bg-white h-2/5 lg:hidden" />
+            {/* Third item */}
+            <div className="flex-1 flex flex-col items-center justify-center p-2 mt-4 sm:mt-0">
               <div>Customer ratings</div>
               <div className="font-soleil-regular text-xs">
                 <span className="flex">
