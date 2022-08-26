@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        slg: "896px",
+      },
+      backgroundImage: { "granular-pattern": "url('/granular.png')" },
       colors: {
         "brand-light": "#38D2D9",
         "brand-dark": "#142249",

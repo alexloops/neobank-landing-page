@@ -43,9 +43,7 @@ export default function MainLayout({
 
       <Navbar />
       {/* The padding top of this div has to be the same height of the navbar */}
-      <div className="flex-1 min-h-full w-full bg-red-300 pt-[128px]">
-        {children}
-      </div>
+      <div className="flex-1 min-h-full w-full pt-[128px]">{children}</div>
       <Footer />
     </div>
   );
@@ -70,7 +68,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="fixed bg-white w-full flex flex-col items-center">
+    <header className="fixed z-50 bg-white w-full flex flex-col items-center">
       <div
         className={classNames(
           "bg-neutral-100 w-full flex items-center justify-center transition-all duration-100",
@@ -235,7 +233,7 @@ const Navbar = () => {
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-50 w-full  flex flex-col items-center">
+    <footer className="bg-slate-50 w-full flex flex-col items-center">
       <div className="w-full h-0.5 bg-gradient-to-r from-[#F6BC4D] to-brand-light" />
       <div className="w-full h-[550px] text-sm max-w-7xl pt-28 px-8 flex flex-col justify-between divide-y divide-slate-200">
         <div className="h-5 px-4 flex">
