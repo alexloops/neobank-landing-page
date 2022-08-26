@@ -71,19 +71,19 @@ const Navbar = () => {
     <header className="fixed z-50 bg-white w-full flex flex-col items-center">
       <div
         className={classNames(
-          "bg-neutral-100 text-sm sm:text-lg w-full px-4 flex items-center justify-center transition-all duration-100",
+          "bg-neutral-100 text-sm sm:text-md w-full px-4 flex items-center justify-center transition-all duration-100",
           isScrolled ? "h-0" : "h-10"
         )}
       >
         {" "}
-        <span className="md:text-xl mr-3">👋</span> Loan for businesses. Fast,
-        safe and 100% online!
+        <span className="text-lg mr-3">👋</span> Loan for businesses. Fast, safe
+        and 100% online!
       </div>
       <nav className="bg-white w-full text-sm max-w-7xl">
         <Popover className="relative">
           <div
             className={classNames(
-              "flex justify-between items-center px-4 md:justify-start md:space-x-10 transition-all duration-80",
+              "flex justify-between items-center px-4 md:justify-start space-x-6 xl:space-x-10 transition-all duration-80",
               isScrolled ? "py-3" : "py-6"
             )}
           >
@@ -144,7 +144,7 @@ const Navbar = () => {
               <a
                 href="#"
                 className={classNames(
-                  "whitespace-nowrap inline-flex items-center justify-center px-4  border border-transparent rounded-md font-soleil-bold text-brand-dark hover:opacity-90 border-brand-light",
+                  "whitespace-nowrap inline-flex items-center justify-center px-4  border border-transparent rounded-md font-soleil-bold text-brand-dark hover:opacity-90 lg:border-brand-light",
                   isScrolled ? "py-1" : "py-2"
                 )}
               >
