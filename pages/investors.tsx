@@ -1,17 +1,13 @@
 import MainLayout from "@/components/layouts/MainLayout";
-import HomeHero from "@/components/sections/HomeHero";
-import HomeHowItWorks from "@/components/sections/HomeHowItWorks";
-import CompanyBenefits from "@/components/sections/CompanyBenefits";
 import FAQ from "@/components/sections/FAQ";
 import InvestorBenefits from "@/components/sections/InvestorBenefits";
+import InvestorsHero from "@/components/sections/InvestorsHero";
 
-export default function Home() {
+export default function Investors() {
   return (
     <MainLayout title="NeoBank" meta="The best Bank for your necessities!">
       <main className="w-100%">
-        <HomeHero />
-        <HomeHowItWorks />
-        <CompanyBenefits />
+        <InvestorsHero />
         <InvestorBenefits />
         <FAQ />
       </main>
