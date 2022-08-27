@@ -1,5 +1,6 @@
 import MainLayout from "@/components/layouts/MainLayout";
 import HomeHero from "@/components/sections/HomeHero";
+import HomeHowItWorks from "@/components/sections/HomeHowItWorks";
 import FAQ from "@/components/sections/FAQ";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <main className="w-100%">
         <h1>
           <HomeHero />
+          <HomeHowItWorks />
           <FAQ />
         </h1>
       </main>
