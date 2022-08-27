@@ -63,6 +63,7 @@ export default function HomeHowItWorks() {
               {data.map((item, index) => {
                 return (
                   <div
+                    key={item.title}
                     className={classNames(
                       "flex items-start pl-3",
                       index + 1 < data.length
