@@ -46,7 +46,7 @@ function classNames(...classes: string[]) {
 
 export default function InvestorBenefits() {
   return (
-    <section className="bg-white border-b px-2 sm:px-12 py-16 sm:py-20 lg:py-32">
+    <section className="bg-gray-50 border-b px-2 sm:px-12 py-16 sm:py-20 lg:py-32">
       <div className="relative mx-auto max-w-4xl">
         <div className="md:grid md:grid-cols-2 md:gap-6 lg:gap-8">
           {/* Image Part */}
