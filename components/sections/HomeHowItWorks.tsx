@@ -41,9 +41,9 @@ export default function HomeHowItWorks() {
       className="bg-gray-100 px-2 sm:px-12 py-16 sm:py-24 lg:py-32"
     >
       <div className="relative mx-auto max-w-4xl">
-        <div className="md:grid md:grid-cols-12 md:gap-4 lg:gap-8">
+        <div className="md:grid md:grid-cols-2 md:gap-4 lg:gap-8">
           {/* Image Part */}
-          <div className="mt-12 sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0 md:col-span-6 md:flex md:items-center">
+          <div className="mt-12 sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0 md:flex md:items-center">
             <img
               className="w-full mx-auto pl-8 md:pl-0 mb-12 md:mb-0 max-w-sm md:max-w-full"
               src="/guy-using-app.png"
@@ -51,7 +51,7 @@ export default function HomeHowItWorks() {
             />
           </div>
           {/* Explanation Part */}
-          <div className="text-center px-4 sm:px-16 md:px-1 md:max-w-2xl md:mx-auto md:col-span-6 md:text-left">
+          <div className="text-center px-4 sm:px-16 md:px-1 md:max-w-2xl md:mx-auto md:text-left">
             <span className="mt-1 block text-3xl tracking-tight font-soleil-bold text-brand-dark sm:text-4xl">
               How does it work?
             </span>
