@@ -1,6 +1,7 @@
 import MainLayout from "@/components/layouts/MainLayout";
 import HomeHero from "@/components/sections/HomeHero";
 import HomeHowItWorks from "@/components/sections/HomeHowItWorks";
+import HomeBenefits from "@/components/sections/HomeBenefits";
 import FAQ from "@/components/sections/FAQ";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <h1>
           <HomeHero />
           <HomeHowItWorks />
+          <HomeBenefits />
           <FAQ />
         </h1>
       </main>
