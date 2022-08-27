@@ -43,7 +43,7 @@ export default function HomeHowItWorks() {
       <div className="relative mx-auto max-w-4xl">
         <div className="md:grid md:grid-cols-2 md:gap-4 lg:gap-8">
           {/* Image Part */}
-          <div className="mt-12 sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0 md:flex md:items-center">
+          <div className="mt-12 sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0">
             <img
               className="w-full mx-auto pl-8 md:pl-0 mb-12 md:mb-0 max-w-sm md:max-w-full"
               src="/guy-using-app.png"
