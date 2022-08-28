@@ -62,7 +62,7 @@ export default function FAQ() {
   const [activeButton, setActiveButton] = useState(1);
   return (
     <section className="bg-white py-16 md:py-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-center text-3xl font-soleil-bold tracking-tight mb-16 font-bold text-brand-dark sm:text-4xl">
             Frequently asked questions
@@ -139,7 +139,7 @@ export default function FAQ() {
                       >
                         <Disclosure.Panel
                           as="dd"
-                          className="mt-2 pr-12 pl-14 pb-10 pt-2"
+                          className="mt-2 pr-6 pl-9 sm:pr-12 sm:pl-14 pb-10 pt-2"
                         >
                           <p className="text-base text-gray-500">
                             {faq.answer}

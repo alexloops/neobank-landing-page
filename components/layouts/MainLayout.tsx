@@ -171,10 +171,7 @@ const Navbar = () => {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Popover.Panel
-              focus
-              className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-            >
+            <Popover.Panel className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
               <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                 <div className="py-6 px-5">
                   <div className="grid grid-cols-2 gap-4">

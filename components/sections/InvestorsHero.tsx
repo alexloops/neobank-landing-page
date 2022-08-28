@@ -18,13 +18,14 @@ export default function InvestorsHero() {
       <div className="w-full flex justify-center px-2 sm:px-12">
         <div className="max-w-5xl py-10 sm:py-12 lg:py-16">
           {/* Header Part */}
-          <div className="flex items-center mt-12 sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0">
+          <div className="flex flex-col lg:flex-row items-center mt-12 mb-12 lg:mb-0 sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0">
             <div className="mr-8">
               <span className="uppercase mb-2 text-brand-light text-sm font-soleil-bold">
                 Start Investing
               </span>
-              <span className="mt-1 mb-6 block text-3xl tracking-tight font-soleil-bold text-brand-dark sm:text-4xl">
-                Companies from different sectors and sizes
+              <span className="mt-1 mb-6 block text-3xl text-center lg:text-left tracking-tight font-soleil-bold text-brand-dark sm:text-4xl">
+                Companies from different{" "}
+                <span className="inline-block">sectors and sizes</span>
               </span>
             </div>
             <div className="text-brand-dark text-sm">
@@ -35,14 +36,14 @@ export default function InvestorsHero() {
           {/* Image and Explanation Part */}
           <div className="grid grid-cols-10 items-end">
             <img
-              className="col-span-6 md:pl-0 mb-12 md:mb-0"
+              className="col-span-10 md:col-span-6 md:pl-0 mb-12 md:mb-0 mx-auto"
               src="/computer.png"
               alt=""
             />
-            <div className="col-span-4 flex flex-col justify-end items-start h-full ml-8">
+            <div className="col-span-10 md:col-span-4 flex flex-col justify-end items-center md:items-start h-full ml-8">
               <div>
                 <span className="uppercase mb-4 font-soleil-bold text-brand-dark">
-                  Company funding
+                  Companes raising
                 </span>
 
                 <span className="w-full py-4 flex items-center text-zinc-500 border-b border-zinc-500 border-opacity-10">
@@ -59,7 +60,7 @@ export default function InvestorsHero() {
                   <TbBuildingFactory2 className="text-brand-light mr-3" />{" "}
                   Industry
                 </span>
-                <button className="bg-brand-light font-soleil-bold w-[280px] mb-16 hover:opacity-90 h-16 mt-12 rounded-md">
+                <button className="bg-brand-light font-soleil-bold w-[220px] md:w-[260px] h-14 md:h-16 mb-16 hover:opacity-90 mt-12 rounded-md">
                   Invest Today
                 </button>
               </div>

@@ -51,7 +51,7 @@ export default function CompanyBenefits() {
       <div className="relative mx-auto max-w-4xl">
         <div className="md:grid md:grid-cols-2 md:gap-6 lg:gap-8">
           {/* Image Part */}
-          <div className="mt-12 sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0 flex flex-col justify-between items-start">
+          <div className="flex flex-col justify-between items-start px-4 mt-12 sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0">
             <span className="text-lg mb-8 border border-brand-light text-gray-700 rounded-full p-2">
               <GiReceiveMoney />
             </span>
@@ -78,7 +78,7 @@ export default function CompanyBenefits() {
                 );
               })}
             </div>
-            <button className="bg-brand-light font-soleil-bold w-[280px] hover:opacity-90 h-16 mt-12 rounded-md">
+            <button className="bg-brand-light font-soleil-bold w-[220px] sm:w-[280px] h-14 sm:h-16 hover:opacity-90 mt-12 rounded-md">
               Get a Loan
             </button>
           </div>

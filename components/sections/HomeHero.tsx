@@ -23,13 +23,13 @@ export default function HomeHero() {
                 and <Highlight>no burocracy</Highlight>
               </span>
             </p>
-            <div className="flex itens center mb-9 p-2 rounded-md bg-brand-dark bg-opacity-20">
+            <div className="flex items-center mb-9 p-2 rounded-md bg-brand-dark bg-opacity-20">
               <input
                 placeholder={`How much do you need?`}
                 type="number"
                 className="sm:w-[240px] text-center mr-2 h-10 sm:h-14 rounded-md bg-white bg-opacity-60 placeholder:text-brand-dark placeholder:text-center placeholder:text-xs sm:placeholder:text-sm text-brand-dark focus:outline-none focus:placeholder:text-transparent"
               />
-              <button className="bg-brand-light text-sm font-soleil-regular sm:font-soleil-bold rounded-md text-brand-dark py-1 px-1 sm:px-4">
+              <button className="px-1 sm:px-4 h-10 bg-brand-light text-sm font-soleil-regular sm:font-soleil-bold rounded-md text-brand-dark">
                 Simulate Loan
               </button>
             </div>
