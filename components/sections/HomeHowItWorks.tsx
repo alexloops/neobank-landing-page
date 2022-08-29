@@ -11,19 +11,19 @@ const data = [
     icon: <CgLoadbarDoc />,
   },
   {
-    title: "Make your request",
+    title: "Make your request2",
     description:
       "Inform the value your company needs and sign up in our platform.",
     icon: <TbFileSearch />,
   },
   {
-    title: "Make your request",
+    title: "Make your request3",
     description:
       "Inform the value your company needs and sign up in our platform.",
     icon: <GiReceiveMoney />,
   },
   {
-    title: "Make your request",
+    title: "Make your request4",
     description:
       "Inform the value your company needs and sign up in our platform.",
     icon: <FaMoneyBill />,

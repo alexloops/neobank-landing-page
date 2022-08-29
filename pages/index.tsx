@@ -5,7 +5,7 @@ import CompanyBenefits from "@/components/sections/CompanyBenefits";
 import FAQ from "@/components/sections/FAQ";
 import InvestorBenefits from "@/components/sections/InvestorBenefits";
 import HowInvestingWorks from "@/components/sections/HowInvestingWorks";
-import SimulateLoan from "@/components/sections/SimulateLoan";
+import DigitalWallet from "@/components/sections/DigitalWallet";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <HomeHero />
         <HomeHowItWorks />
         <CompanyBenefits />
-        <SimulateLoan />
+        <DigitalWallet page="home" />
         <HowInvestingWorks />
         <InvestorBenefits />
         <FAQ />

@@ -10,6 +10,7 @@ export default function HowInvestingWorks() {
       <img
         src="/p2p.png"
         className="absolute w-[80px] right-8 sm:right-16 md:right-24 top-6 sm:top-12 md:top-20"
+        alt="p2p investing"
       />
       <div className="flex flex-col items-center max-w-4xl mx-auto">
         <span className="text-lg self-center mb-8 border border-brand-light text-gray-700 rounded-full p-2">

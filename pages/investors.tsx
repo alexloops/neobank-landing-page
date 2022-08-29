@@ -3,6 +3,7 @@ import FAQ from "@/components/sections/FAQ";
 import HowInvestingWorks from "@/components/sections/HowInvestingWorks";
 import InvestorBenefits from "@/components/sections/InvestorBenefits";
 import InvestorsHero from "@/components/sections/InvestorsHero";
+import DigitalWallet from "@/components/sections/DigitalWallet";
 
 export default function Investors() {
   return (
@@ -11,6 +12,7 @@ export default function Investors() {
         <InvestorsHero />
         <InvestorBenefits />
         <HowInvestingWorks />
+        <DigitalWallet page={"investors"} />
         <FAQ />
       </main>
     </MainLayout>
