@@ -222,12 +222,12 @@ const LoanSimulator = () => {
 
 const LoanInfo = () => {
   return (
-    <div className="grid grid-cols-10 gap-16 w-full md:px-16 lg:px-24">
-      <div className="col-span-3 flex flex-col">
+    <div className="max-w-5xl grid grid-cols-3 md:grid-cols-10 gap-8 md:gap-16 w-full px-0 xs:px-4 sm:px-12 md:px-16 lg:px-24">
+      <div className="col-span-3 flex flex-col mx-auto max-w-[280px]">
         <span className="text-xl mb-4 self-start border border-gray-200 text-gray-700 rounded-full p-2.5 md:mr-7">
           <FaMoneyBillAlt />
         </span>
-        <span className="font-soleil-bold text-white text-3xl sm:text-4xl mb-8 text-center lg:text-left">
+        <span className="font-soleil-bold text-white text-4xl mb-8 text-center lg:text-left">
           Join us!
         </span>
         <p className="text-gray-200 max-w-[250px] sm:max-w-none text-sm mb-8 text-center lg:text-left">
@@ -240,17 +240,17 @@ const LoanInfo = () => {
           Join + 2000 Neo investors
         </div>
       </div>
-      <div className="col-span-7 pl-12 pt-12">
-        <div className="py-2 px-2 w-[450px] bg-gradient-to-r from-slate-600 to-transparent backdrop-blur-2xl shadow-md opacity-80 rounded">
-          <div className="flex itens-center justify-between ml-2 text-white mb-1">
+      <div className="col-span-3 md:col-span-7 md:pl-12 pt-12 pb-24 md:pb-0 mx-auto">
+        <div className="py-2 px-2 w-auto xs:w-[400px] lg:w-[450px] bg-gradient-to-r from-slate-600 to-transparent backdrop-blur-2xl shadow-md opacity-80 rounded">
+          <div className="flex itens-center text-xs xs:text-base justify-between ml-2 text-white mb-1">
             Value used to fund companies in Neo so far
-            <span className="my-auto flex space-x-1.5">
+            <span className="my-auto space-x-1.5 hidden xs:flex">
               <div className="rounded-full h-2 w-2 bg-red-500" />
               <div className="rounded-full h-2 w-2 bg-yellow-400" />
               <div className="rounded-full h-2 w-2 bg-neutral-300" />
             </span>
           </div>
-          <div className="flex items-center justify-center text-brand-dark font-soleil-bold text-5xl bg-white rounded h-[150px]">
+          <div className="flex items-center justify-center text-brand-dark font-soleil-bold text-3xl xs:text-5xl bg-white rounded h-[100px] xs:h-[140px] lg:h-[150px]">
             $13,471,366.00
           </div>
         </div>
