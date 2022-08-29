@@ -4,6 +4,8 @@ import HomeHowItWorks from "@/components/sections/HomeHowItWorks";
 import CompanyBenefits from "@/components/sections/CompanyBenefits";
 import FAQ from "@/components/sections/FAQ";
 import InvestorBenefits from "@/components/sections/InvestorBenefits";
+import HowInvestingWorks from "@/components/sections/HowInvestingWorks";
+import SimulateLoan from "@/components/sections/SimulateLoan";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
         <HomeHero />
         <HomeHowItWorks />
         <CompanyBenefits />
+        <SimulateLoan />
+        <HowInvestingWorks />
         <InvestorBenefits />
         <FAQ />
       </main>

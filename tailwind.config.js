@@ -5,10 +5,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      "2xs": "360px",
+      xs: "480px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
-      screens: {
-        slg: "896px",
-      },
       backgroundImage: { "granular-pattern": "url('/granular.png')" },
       colors: {
         "brand-light": "#38D2D9",
