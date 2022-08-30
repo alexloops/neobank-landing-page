@@ -6,6 +6,7 @@ import { FaMoneyBillAlt } from "react-icons/fa";
 import { HiOutlineLightningBolt } from "react-icons/hi";
 import { MdOutlineDashboard, MdOutlinePhonelink } from "react-icons/md";
 import * as Slider from "@radix-ui/react-slider";
+var Finance = require("tvm-financejs");
 
 export default function DigitalWallet({ page }: { page: string }) {
   return (
@@ -128,8 +129,36 @@ export default function DigitalWallet({ page }: { page: string }) {
 }
 
 const LoanSimulator = () => {
+  var finance = new Finance();
+
+  const monthlyRate = 0.021;
   const [amount, setAmount] = useState([10000]);
   const [installments, setInstallments] = useState([24]);
+  const [finalInstallments, setFinalInstallments] = useState(installments);
+
+  const [pmt, setPmt] = useState(
+    finance.PMT(monthlyRate, installments, -amount[0])
+  );
+
+  const formatMoney = (value: number) => {
+    const formatter = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+    });
+    return formatter.format(value);
+  };
+  const formatRate = (value: number) => {
+    value = value * 100;
+    const formatter = new Intl.NumberFormat("en-US", {
+      maximumSignificantDigits: 2,
+    });
+    return formatter.format(value);
+  };
+
+  const calculatePmt = () => {
+    setFinalInstallments(installments);
+    setPmt(finance.PMT(monthlyRate, installments, -amount[0]));
+  };
 
   return (
     <div className="flex flex-col items-center w-full px-8 mb-16 xs:mb-0 md:px-12 lg:px-24">
@@ -150,7 +179,9 @@ const LoanSimulator = () => {
           <div className="cols-span-1">
             <div className="w-full flex justify-between items-center mb-3">
               <span>Amount</span>{" "}
-              <span className="font-soleil-bold text-lg">${amount[0]}</span>
+              <span className="font-soleil-bold text-base">
+                {formatMoney(amount[0])}
+              </span>
             </div>
             <Slider.Root
               defaultValue={[10000]}
@@ -172,7 +203,7 @@ const LoanSimulator = () => {
           <div className="cols-span-1">
             <div className="w-full flex justify-between items-center mb-3">
               <span>Installments</span>{" "}
-              <span className="font-soleil-bold text-lg">
+              <span className="font-soleil-bold text-base">
                 {installments[0]}x
               </span>
             </div>
@@ -195,23 +226,28 @@ const LoanSimulator = () => {
           {/* Interest Rate */}
           <div className="cols-span-1 border-b">
             <div className="w-full mb-2">Interest Rate</div>
-            <span className="font-soleil-bold text-xl">2.10%</span>{" "}
+            <span className="font-soleil-bold text-lg">
+              {formatRate(monthlyRate)}%
+            </span>{" "}
             <span className="font-soleil-bold">/ month</span>
           </div>
           {/* Simulate Button */}
           <div className="cols-span-1 py-1">
-            <button className="w-full h-full min-h-[50px] bg-brand-light font-soleil-bold rounded-lg hover:opacity-90">
+            <button
+              onClick={calculatePmt}
+              className="w-full h-full min-h-[50px] bg-brand-light font-soleil-bold rounded-lg hover:opacity-90"
+            >
               Simulate
             </button>
           </div>
           {/* Total */}
           <div className="cols-span-1 border-b">
             <div className="w-full mb-2">Total</div>
-            <span className="font-soleil-regular text-lg text-brand-light">
-              24x of{" "}
+            <span className="font-soleil-regular text-base text-brand-light">
+              {finalInstallments}x of{" "}
             </span>
-            <span className="font-soleil-bold text-xl text-brand-light">
-              $487.84
+            <span className="font-soleil-bold text-lg text-brand-light">
+              {formatMoney(pmt)}
             </span>{" "}
           </div>
         </div>
