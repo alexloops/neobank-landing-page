@@ -7,42 +7,32 @@ import { TbFileSearch } from "react-icons/tb";
 
 const data = [
   {
-    title: "Make your request",
     description: "Inform the value your company needs.",
     icon: <MdComputer />,
   },
   {
-    title: "Make your request",
     description:
       "Inform the value your company needs and sign up in our platform.",
     icon: <BiPieChartAlt2 />,
   },
   {
-    title: "Make your request",
     description: "Inform a value and sign up in our platform.",
     icon: <BsCashStack />,
   },
   {
-    title: "Make your request",
     description: "Inform the value your company needs.",
     icon: <TbFileSearch />,
   },
   {
-    title: "Make your request",
     description:
       "Inform the value your company needs and sign up in our platform.",
     icon: <RiScissorsCutLine />,
   },
   {
-    title: "Make your request",
     description: "Inform a value and sign up in our platform.",
     icon: <FaGem />,
   },
 ];
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default function InvestorBenefits() {
   return (

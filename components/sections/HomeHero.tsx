@@ -13,7 +13,7 @@ export default function HomeHero() {
         <div className="max-w-7xl w-full flex-1 px-8 flex flex-col items-center lg:flex-row">
           {/* Text part */}
           <div className="lg:w-1/2 pt-24 lg:pt-0 flex flex-col items-center lg:justify-center">
-            <p className="uppercase mb-3 text-center text-brand-dark font-soleil-bold">
+            <p className="uppercase mb-3 text-center lg:text-left text-brand-dark font-soleil-bold">
               We help you grow your company
             </p>
             <p className="text-white text-center lg:text-left font-soleil-bold text-4xl mb-12">
@@ -26,10 +26,9 @@ export default function HomeHero() {
             <div className="flex items-center mb-9 p-2 rounded-md bg-brand-dark bg-opacity-20">
               <input
                 placeholder={`How much do you need?`}
-                type="number"
                 className="sm:w-[240px] text-center mr-2 h-10 sm:h-14 rounded-md bg-white bg-opacity-60 placeholder:text-brand-dark placeholder:text-center placeholder:text-xs sm:placeholder:text-sm text-brand-dark focus:outline-none focus:placeholder:text-transparent"
               />
-              <button className="px-1 sm:px-4 h-10 bg-brand-light text-sm font-soleil-regular sm:font-soleil-bold rounded-md text-brand-dark">
+              <button className="px-1 sm:px-4 h-10 sm:h-14 bg-brand-light text-sm font-soleil-regular sm:font-soleil-bold rounded-md text-brand-dark">
                 Simulate Loan
               </button>
             </div>

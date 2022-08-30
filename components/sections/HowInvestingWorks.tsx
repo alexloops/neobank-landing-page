@@ -17,7 +17,7 @@ export default function HowInvestingWorks() {
           <MdShare />
         </span>
         {/* Title */}
-        <span className="mt-1 mb-20 block text-3xl text-center sm:text-left tracking-tight font-soleil-bold text-brand-dark sm:text-4xl">
+        <span className="mt-1 mb-20 block text-3xl text-center tracking-tight font-soleil-bold text-brand-dark sm:text-4xl">
           How Investing with Neo works
         </span>
         {/* Grid Part */}

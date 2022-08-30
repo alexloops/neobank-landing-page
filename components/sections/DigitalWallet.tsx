@@ -40,13 +40,13 @@ export default function DigitalWallet({ page }: { page: string }) {
         <div className="grid grid-cols-1 sm:grid-cols-3 max-w-5xl mx-auto px-6 pb-20 lg:pb-32">
           {/* Explanation 1 */}
           <div className="col-span-1 pt-[300px] sm:pt-20 flex flex-col items-center lg:items-start">
-            <span className="text-xl mb-8 self-center border border-brand-light text-gray-700 rounded-full p-3 md:mr-7">
+            <div className="text-xl mb-8 md:self-start border border-brand-light text-gray-700 rounded-full p-3 md:mr-7">
               <FaMoneyBillAlt />
-            </span>
+            </div>
             <span className="font-soleil-bold text-brand-dark sm:text-3xl mb-4 text-center lg:text-left">
               Internet Banking <span className="inline-block">& App</span>
             </span>
-            <p className="text-zinc-500 max-w-[250px] sm:max-w-none text-sm mb-8 text-center lg:text-left">
+            <p className="text-zinc-500 max-w-[250px] sm:max-w-none text-sm mb-8 text-center md:text-left">
               Complete your registration in our website and check which
               companies are raising at moment. Complete your registration in our
               website and check which companies are raising at moment.
@@ -132,7 +132,7 @@ const LoanSimulator = () => {
   const [installments, setInstallments] = useState([24]);
 
   return (
-    <div className="flex flex-col items-center w-full md:px-16 lg:px-24">
+    <div className="flex flex-col items-center w-full px-8 mb-16 xs:mb-0 md:px-12 lg:px-24">
       <span className="mb-7 text-white text-3xl font-soleil-bold">
         Simulate your business loan
       </span>
@@ -145,12 +145,12 @@ const LoanSimulator = () => {
             <div className="rounded-full h-2 w-2 bg-neutral-300" />
           </span>
         </div>
-        <div className="bg-white rounded grid grid-cols-5 p-3 gap-5">
+        <div className="bg-white rounded grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 p-3 gap-6">
           {/* Amount */}
           <div className="cols-span-1">
             <div className="w-full flex justify-between items-center mb-3">
               <span>Amount</span>{" "}
-              <span className="font-soleil-bold text-lg">${amount[0]}.00</span>
+              <span className="font-soleil-bold text-lg">${amount[0]}</span>
             </div>
             <Slider.Root
               defaultValue={[10000]}
@@ -200,13 +200,13 @@ const LoanSimulator = () => {
           </div>
           {/* Simulate Button */}
           <div className="cols-span-1 py-1">
-            <button className="w-full h-full bg-brand-light font-soleil-bold rounded-lg hover:opacity-90">
+            <button className="w-full h-full min-h-[50px] bg-brand-light font-soleil-bold rounded-lg hover:opacity-90">
               Simulate
             </button>
           </div>
           {/* Total */}
           <div className="cols-span-1 border-b">
-            <div className="w-full mb-2">Interest Rate</div>
+            <div className="w-full mb-2">Total</div>
             <span className="font-soleil-regular text-lg text-brand-light">
               24x of{" "}
             </span>
@@ -224,14 +224,15 @@ const LoanInfo = () => {
   return (
     <div className="max-w-5xl grid grid-cols-3 md:grid-cols-10 gap-8 md:gap-16 w-full px-0 xs:px-4 sm:px-12 md:px-16 lg:px-24">
       <div className="col-span-3 flex flex-col mx-auto max-w-[280px]">
-        <span className="text-xl mb-4 self-start border border-gray-200 text-gray-700 rounded-full p-2.5 md:mr-7">
+        <span className="text-xl mb-4 self-center lg:self-start border border-gray-200 text-gray-700 rounded-full p-2.5">
           <FaMoneyBillAlt />
         </span>
         <span className="font-soleil-bold text-white text-4xl mb-8 text-center lg:text-left">
           Join us!
         </span>
         <p className="text-gray-200 max-w-[250px] sm:max-w-none text-sm mb-8 text-center lg:text-left">
-          Invest between $15,000 and $500,000 and earn up to 60% / year.
+          Invest between $15,000 and $500,000 and earn up to{" "}
+          <span className="inline-block">60% / year.</span>
         </p>
         <button className="w-full h-12 font-soleil-bold bg-brand-light hover:opacity-90 rounded-md">
           Become Investor
